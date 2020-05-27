@@ -1,0 +1,157 @@
+    3  pwd
+    4  git --version
+    5  pwd
+    6  ls
+    7  ls-a
+    8  ls -a
+    9  clear
+   10  cd desktop/
+   11  cd downloads/
+   12  cd h
+   13  cd bday
+   14  cd ..
+   15  cd 2015
+   16  cd ..
+   17  cd
+   18  cd desktop
+   19  mkdir fullstackdev
+   20  cd fullstackdev/
+   21  touch full_stack.txt
+   22  ls
+   23  cat full_stack.txt
+   24  echo "full stack developer">full_stack.txt
+   25  cat full_stack.txt
+   26  echo "html and css">full_stack.txt
+   27  cat full_stack.txt
+   28  echo "javascript">>full_stack.txt
+   29  cat full_stack.txt
+   30  gedit full_stack.txt
+   31  nano full_stack.txt
+   32  nano data.txt
+   33  data.txt full_stack.txt
+   34  rm data.txt
+   35  ls
+   36  rm -f data.txt
+   37  rm -d fullstackdev
+   38  rmdir fullstackdev
+   39  rm help
+   40  mkdir Git
+   41  ls
+   42  git init
+   43  git status
+   44  git add full_stack.txt
+   45  git status
+   46  git commit -m "first commit"
+   47  git config --global user.henaganti@gmail.com
+   48  git config --global user.'henaganti@gmail.com'
+   49  git config --global user.email'henaganti@gmail.com'
+   50  git config --global user,name 'harshithenaganti'
+   51  git config --global user.name 'harshithenaganti'
+   52  git config user.email
+   53  git config user.name
+   54  nano full_stack.txt
+   55  git status
+   56  git commit -m "second commit"
+   57  git log
+   58  git commit -m "first commit"
+   59  git config --global user.email 'henaganti@gmail.com'
+   60  git config --global user.name 'harshithenaganti'
+   61  git config user.name
+   62  git config user.email
+   63  nano full_stack.txt
+   64  git status
+   65  git rm --cached<fullstack
+   66  git rm --cached<fullstackdev>
+   67  git add full_stack.txt
+   68  git commit -m "second commit"
+   69  git log
+   70  mkdir FULLSTACK
+   71  ls
+   72  git remote -help
+   73  git remote add FULLSTACK https://github.com/Harshithenaganti/FULLSTACK
+   74  git remote show
+   75  git pull FULLSTACK master
+   76  git push -u FULLSTACK
+   77  git push --set-upstream FULLSTACK master
+   78  git push -f --set-upstream FULLSTACK master
+   79  git push -f --set-upstream FULLSTACK master
+   80  cd fullstackdev/
+   81  cd fullstackdev/
+   82  nano full_stack.txt
+   83  git --version
+   84  pwd
+   85  ls
+   86  ls -a
+   87  clear
+   88  cd desktop/
+   89  cd bday/
+   90  cd ..
+   91  cd
+   92  cd desktop/
+   93  clear
+   94  mkdir FullStackDev
+   95  ls
+   96  cd FullStackDev/
+   97  clear
+   98  touch Full_Stack.txt
+   99  ls
+  100  cat Full_Stack.txt
+  101  echo "Full Stack Developer" > Full_Stack.txt
+  102  cat Full_Stack.txt
+  103  echo "HTML and CSS" > Full_Stack.txt
+  104  cat Full_Stack.txt
+  105  echo "JavaScript" >> Full_Stack.txt
+  106  cat Full_Stack.txt
+  107  clear
+  108  gedit Full_Stack.txt
+  109  nano Full_Stack.txt
+  110  cat Full_Stack.txt
+  111  nano Data.txt
+  112  ls
+  113  nano Data.txt
+  114  clear
+  115  rm help
+  116  rm --help
+  117  clear
+  118  rm Data.txt
+  119  ls
+  120  rm -f Data.txt
+  121  rm -d <DirName>
+  122  rmdir --help
+  123  clear
+  124  mkdir Git
+  125  ls
+  126  git init
+  127  git status
+  128  git add Full_Stack.txt
+  129  git status
+  130  clear
+  131  git commit -m "First Commit"
+  132  git config --global user.email "henaganti@gmail.com"
+  133  git config --global user.name 'Harshith'
+  134  git config user.email
+  135  git config user.name
+  136  git commit -m "First Commit"
+  137  clear
+  138  nano Full_Stack.txt
+  139  git status
+  140  git add Full_Stack.txt
+  141  git commit -m "Second Commit"
+  142  git log
+  143  clear
+  144  mkdir Full-Stack
+  145  ls
+  146  git remote -help
+  147  git remote add Full-Stack https://github.com/Harshithenaganti/Full-Stack
+  148  git remote show
+  149  git remote -v
+  150  git pull Full-Stack master
+  151  git push -u Full-Stack
+  152  git push --set-upstream Full-Stack master
+  153  git push -f --set-upstream Full-Stack master
+  154  ls
+  155  git status
+  156  git add gitcommands.txt
+  157  history
+  158  history 157 > git commands.txt
+  159  history 157 > gitcommands.txt
