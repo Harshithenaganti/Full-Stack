@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <script>
+            function registration(){
+                var name= document.getElementById("t1").value;
+                var email= document.getElementById("t2").value;
+                var uname= document.getElementById("t3").value;
+                var pwd= document.getElementById("t4").value;
+                var cpwd= document.getElementById("t5").value;
+                var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+                var letters = /^[A-Za-z]+$/;
+                var un = /^[A-Z][a-zA-Z0-9]+$/;
+                if(name=='')
+                {
+                    alert('please enter your name');
+                }
+                else if(!letters.test(name))
+                {
+                    alert('name field require only alphabet charecters');
+                }
+                else if(email=='')
+                {
+                    alert('please enter your emailid');
+                }
+                else if(pwd=='')
+                {
+                    alert('please enter password');
+                }
+                else if(cpwd=='')
+                {
+                    alert('please confirm password');
+                }
+                else if(!pwd_expression.test(pwd))
+                {
+                    alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+                }
+                else if(pwd != cpwd)
+                {
+                    alert('password not matched');
+                }
+                else if(document.getElementById("t3").value.length < 4)
+                {
+                    alert('user name min length is 4');
+                }
+                else if(document.getElementById("t3").value.length > 8)
+                {
+                    alert('username max length is 8');
+                }
+                else{
+                 alert('login successful');
+                    window.location = "https://www.google.co.in";
+                }
+            }
+        </script>
+ </head>
+ <body>
+        <table cellspacing="2" align="center" cellpadding="8">
+            <tr>
+                <td align="right">Enter name:</td>
+                <td><input type="text" placeholder="enter name here" id="t1" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter emailid:</td>
+                <td><input type="text" placeholder="enter emailid here" id="t2" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter username:</td>
+                <td><input type="text" placeholder="Enter username here" id="t3" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter password</td>
+                <td><input type="password" placeholder="enter password here" id="t4" /></td>
+            </tr>
+            <tr>
+                <td align="right">Enter confirm password</td>
+                <td><input type="password" placeholder="enter password here" id="t5" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="Clear Form" id="res" />
+                    <input type="submit" value="create account" onclick="registration()" />
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
