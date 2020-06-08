@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DOB</title>
+        <script>
+            function validatedob(){
+                var val=document.getElementById("txtdob").value;
+                if(/^[0-9]{2}[/][0-9]{2}[/][0-9]{4}$/.test(val))
+                {
+                    window.alert("valid date of birth");
+                }
+                else{
+                    window.alert("improper date of birth");
+                }
+            }
+            function validateage(){
+                var val1=document.getElementById("txtage").value;
+                if(val1 > 18 ){
+                    window.alert("age is greater than 18");
+                }
+                else{
+                    window.alert("age is less than 18");
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+        DOB:<input type="dateofbirth" id="txtdob" /> <br/>
+       AGE: <input type="age" id="txtage" /> <br/>
+        <button type="button" onclick="validatedob()">ValidateDOB</button>
+        <button type="button" onclick="validateage()">ValidateAge</button>
+    </body>
+</html>
