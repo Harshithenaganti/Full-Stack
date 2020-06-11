@@ -1,0 +1,17 @@
+body {
+    background-image: url("h2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    font-family: "Numans", sans-serif;
+  }
+  
+  .card {
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white;
+  }
+  © 2020 GitHub, Inc.
