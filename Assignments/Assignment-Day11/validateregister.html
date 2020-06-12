@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="jquery/jquery.min.js"></script>
+    <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+    <style type="text/css">
+        .feedback-form {
+            width: 340px;
+            margin: 50px auto;
+        }
+        .feedback-form form {
+            margin-bottom: 15px;
+            background: #f7f7f7;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding:30px;
+        }
+        .feedback-form h2 {
+            margin: 0 0 15px;
+        }
+        .form-control, .btn {
+            min-height: 38px;
+            border-radius: 2px;
+        }
+        .btn {        
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .a1{
+            height: 200px;   
+            text-align: center;
+         }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $("#btnregister").click(function(){
+                    var val1 = $("#txtusername").val();
+                    var val2 = $("#txtphnno").val();
+                    var val3 = $("#txtemail").val();
+                    var val4 = $("#txtaddress").val();
+                    var val5 = $("#txtpass").val();
+                    var un = /^[A-Za-z0-9]{6,12}/ ;
+                    var ph = /^[6-9][0-9]{9}$/;
+                    var pass = /^(?=.?[A-Z])(?=.?[a-z])(?=.?[0-9])(?=.?[#?!@$%^&*-])/;
+                    var e_add= /^[A-Za-z][a-zA-Z0-9.,_]{3,20}[@][a-z]{4,12}[.][a-z]{2,3}$/
+                    if(val1 == '' || val2 == '' || val3 == '' || val4 =='' || val5 == '')
+                    {
+                        $('input[type="text"]').css("border","2px solid red");
+                        $('input[type="password"]').css("border","2px solid red");
+                        $('input[type="number"]').css("border","2px solid red");
+                        $('input[type="email"]').css("border","2px solid red");
+                        $('input[type="address"]').css("border","2px solid red");
+                        window.alert('please fill all the sections');
+                    }
+                    else if(!un.test(val1))
+                    {
+                        alert('min length is 6 and max length is 12 for username');
+                    }
+                    else if(!pass.test(val5))
+                    {
+                        alert('Upper case, Lower case, Special character and Numeric letter are required in Password field');
+                    }
+                    else if(!e_add.test(val3))
+                    {
+                        alert('enter valid email');
+                    }
+                    else if(!ph.test(val2))
+                    {
+                        alert('enter valid phone number');
+                    }
+                    else{
+                        alert('registration succesfull');//we can pass this username and password to the server side
+                    }
+                });
+            });
+    </script>
+</head>
+<body>
+    <div class="feedback-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2 class="text-center">Registration</h2>  
+            <p>You can register here in a minute.</p>     
+            <div class="form-group">
+                <input type="text" id="txtusername" class="form-control" name="u_name" placeholder="Usernameame" required="required">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="txtphnno" name="Number" placeholder="Mobile Number" required="required">
+            </div>    
+            <div class="form-group">
+                <input type="email" class="form-control" id="txtemail" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="address" class="form-control a1" id="txtaddress" name="address" placeholder="address" required="required">
+            </div> 
+            <div class="form-group">
+                <input type="password" class="form-control" id="txtpass" name="password" placeholder="password" required="required">
+            </div>
+            <div class="form-group">
+                <label class="checkbox-inline">
+                    <input type="checkbox" required="required">I accept the <a href="">Terms</a> &amp;
+                    <a href="">Privacy Policy</a>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success btn-block" id="btnregister">Register</button>
+            </div>
+        </form>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+        <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#btnlogin").click(function(){
+                    var val1 = $("#txtusername").val();
+                    var val2 = $("#txtpass").val();
+                    var un = /^[A-Za-z0-9]{6,12}/ ;
+                    var pass = /^[A-Za-z0-9,._]{6,12}/ ;
+                    if(val1 == '' || val2 == '' )
+                    {
+                        $('input[type="text"]').css("border","2px solid red");
+                        $('input[type="password"]').css("border","2px solid red");
+                        window.alert('Fill the username and password');
+                    }
+                    else if(!un.test(val1))
+                    {
+                        $('input[type="text"]').css("border","2px solid red");
+                        $('input[type="password"]').css("border","2px solid red");
+                        alert('min length is 6 and max length is 12 for username');
+                    }
+                    else if(!pass.test(val2))
+                    {
+                        $('input[type="text"]').css("border","2px solid black");
+                        $('input[type="password"]').css("border","2px solid red");
+                        alert('min length is 6 and max is 12 for password');
+                    }
+                    else{
+                        //we can pass this username and password to the server side
+                    }
+                });
+            });
+        </script>
+        <style type="text/css"> 
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <form action="" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="txtusername" placeholder="Enter username"/>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" class="form-control" id="txtpass" placeholder="Enter password"/>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="btnlogin">Login</button>
+            </form>
+        </div>
+    </body>
+</html>
