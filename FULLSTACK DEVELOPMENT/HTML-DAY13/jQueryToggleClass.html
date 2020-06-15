@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $("#btnremoveclass").click(function(){
+            $("div1").toggleClass();
+        });
+
+        });
+        </script>
+        <style>
+            .a1{
+                background-color: lightblue;
+                color: darkblue;
+                font-size: xx-large;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a1" id="div1">
+            <h1>Application Working Status</h1>
+        </div>
+        <div>
+            <button id="btnremoveclass" type="button">Toggleclass</button>
+        </div>
+    </body>
+</html>
