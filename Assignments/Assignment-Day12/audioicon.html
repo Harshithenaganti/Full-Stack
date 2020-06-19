@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="StyleSheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css" />
+
+        <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+
+        <link rel="StyleSheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"/>
+
+        <script type="text/css">
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <audio id="myaudio1">
+
+            <source src="file2.mp3" type="audio/mp3" />
+
+        </audio>
+
+        <p>Click the buttons to play or pause the audio1.</p>
+
+        <button onclick="playaudio1()" type="button"><span><i class="fa fa-play" aria-hidden="true"></i></span></button>
+
+        <button onclick="pauseaudio1()" type="button"><i class="fa fa-pause" aria-hidden="true"></i></button>
+
+        <audio id="myaudio2">
+
+            <source src="file4.mp3" type="audio/mp3" />
+
+        </audio>
+
+        <p>Click the buttons to play or pause the audio2.</p>
+
+        <button onclick="playaudio2()" type="button"><span><i class="fa fa-play" aria-hidden="true"></i></span></button>
+
+        <button onclick="pauseaudio2()" type="button"><i class="fa fa-pause" aria-hidden="true"></i></button>
+
+        <script>
+
+            var x =document.getElementById("myaudio1");
+
+            var y =document.getElementById("myaudio2");
+
+            var z =document.getElementById("myaudio3");
+
+            function playaudio1() {
+
+                x.play();
+
+            }
+
+            function pauseaudio1(){
+
+                x.pause();
+
+            }
+
+            function playaudio2(){
+
+                y.play();
+
+            }
+
+            function pauseaudio2(){
+
+                y.pause();
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

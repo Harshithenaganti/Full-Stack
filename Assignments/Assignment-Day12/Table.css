@@ -1,0 +1,48 @@
+p img{
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+  
+ul a{
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+}
+ul a:hover{
+    background-color:whitesmoke;
+}
+
+   
+ul{
+    border:2px solid black;
+    margin:0px;
+    background-color: red;
+}
+li{
+    margin:5px;
+    color:black;
+    font-size: x-large;
+    font-weight: bold;
+    padding-right:5px;
+    background-color:yellow;
+    padding:3px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+p{
+    transition:translate;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(10, 241, 10);
+    padding: 0px;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+div img{
+    margin-top: 10px;
+    
+}

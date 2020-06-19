@@ -1,0 +1,122 @@
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+.slidershow{
+    margin: 0 auto;
+    margin-top:20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border:solid 10px #2c2c2c;
+}
+
+.slide{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+ .slide img{
+    width:100%;
+    height:100%;
+ }
+
+#i1,#i2,#i3,#i4,#i5,#i6,#i7,#i8,#i9,#i10{
+    display: none;
+}
+#f1,#f2,#f3,#f4,#f5,#f6,#f7{
+    display: none;
+}
+
+.pre,.nxt{
+width:12%;
+height:100%;
+position:absolute;
+top:0;
+background:rgba(88,88,88,.4);
+z-index:99;
+cursor:pointer;
+}
+ 
+.pre{
+    left:0;
+}
+.nxt{
+    right:0;
+}
+
+.nav{
+    width:100%;
+    height: 11px;
+    bottom:12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+
+}
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display:inline-block;
+    background: rgba(0,0,0,.6);
+}
+.slide{
+    z-index:-1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six,
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine,
+#i10:checked ~ #ten{
+    z-index:9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5,
+#i6:checked ~ .nav #dot6,
+#i7:checked ~ .nav #dot7,
+#i8:checked ~ .nav #dot8,
+#i9:checked ~ .nav #dot9,
+#i10:checked ~ .nav #dot10{
+    background:#fff;
+}
+
+#f1:checked ~ #one,
+#f2:checked ~ #two,
+#f3:checked ~ #three,
+#f4:checked ~ #four,
+#f5:checked ~ #five,
+#f6:checked ~ #six,
+#f7:checked ~ #seven{
+    z-index:9;
+}
+#f1:checked ~ .nav #dot1,
+#f2:checked ~ .nav #dot2,
+#f3:checked ~ .nav #dot3,
+#f4:checked ~ .nav #dot4,
+#f5:checked ~ .nav #dot5,
+#f6:checked ~ .nav #dot6,
+#f7:checked ~ .nav #dot7{
+    background:#fff;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
